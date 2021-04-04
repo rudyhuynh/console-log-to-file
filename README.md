@@ -10,20 +10,19 @@ npm install console-log-to-file
 
 Add this to very begining of your app:
 
-```
+```js
 import { consoleLogToFile } from "console-log-to-file";
 // or `const { consoleLogToFile } = require("console-log-to-file")`
 
 consoleLogToFile({
-    logFilePath: '/log/default.log'
-})
+  logFilePath: "/log/default.log",
+});
 
 // below will both log to console and to file:
 console.log("Now ", "is", new Date());
 console.info("Here", "is", { name: "abc" });
 console.warn(new Error("this is an expected warning"), { debugObj: true });
 console.error(new Error("this is an expected error"));
-
 ```
 
 Output to file by default (you can format it by define options.formatter):
