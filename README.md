@@ -12,6 +12,7 @@ Add this to very begining of your app:
 
 ```
 import { consoleLogToFile } from "console-log-to-file";
+// or `const { consoleLogToFile } = require("console-log-to-file")`
 
 consoleLogToFile({
     logFilePath: '/log/default.log'
