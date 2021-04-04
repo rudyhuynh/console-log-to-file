@@ -25,7 +25,7 @@ console.warn(new Error("this is an expected warning"), { debugObj: true });
 console.error(new Error("this is an expected error"));
 ```
 
-Output to file by default (you can format it by define options.formatter):
+Output to file by default (you can format it by define `options.formatter`):
 
 ![alt log-file-screenshot](./log-file-screenshot.png)
 
