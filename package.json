@@ -1,0 +1,16 @@
+{
+  "name": "console-log-to-file",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node ./test/test.js && node ./test/test-includes.js",
+    "test-cjs": "node ./test/test-cjs.js",
+    "build-cjs": "npx rollup index.js --file dist/index.cjs.js --format cjs"
+  },
+  "files": [
+    "./index.js",
+    "dist"
+  ]
+}
