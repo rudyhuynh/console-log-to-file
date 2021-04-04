@@ -33,5 +33,5 @@ Output to file by default (you can format it by define options.formatter):
 
 - `consoleLogToFile(options)`, where `options` accepts:
   - `logFilePath` (string): file path to save log content
-  - `formatter` (function(level, args) => string): level is one of `log/warn/error/info`, `args` is log content.
+  - `formatter` (function(level, args) => string): level is one of `log/warn/error/info`, `args` is log content. See [default formatter](https://github.com/rudyhuynh/console-log-to-file/blob/main/index.js#L4)
   - `includes` (array of `log`, `warn`, `error`, `info`): if defined, will only save to file for included console methods.
