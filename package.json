@@ -9,6 +9,10 @@
     "test-cjs": "node ./test/test-cjs.js",
     "build-cjs": "npx rollup index.js --file dist/index.cjs.js --format cjs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rudyhuynh/console-log-to-file.git"
+  },
   "files": [
     "./index.js",
     "dist"
