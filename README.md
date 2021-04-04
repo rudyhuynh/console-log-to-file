@@ -12,7 +12,7 @@ Add this to very begining of your app:
 
 ```js
 import { consoleLogToFile } from "console-log-to-file";
-// or `const { consoleLogToFile } = require("console-log-to-file")`
+// or `const { consoleLogToFile } = require("console-log-to-file/dist/index.cjs.js")`
 
 consoleLogToFile({
   logFilePath: "/log/default.log",
