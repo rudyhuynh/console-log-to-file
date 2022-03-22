@@ -9,7 +9,7 @@ function defaultFormatter(level, args) {
  *
  * @param {*} param0
  */
-export function consoleLogToFile({ logFilePath, formatter = defaultFormatter, includes = [], flags: "a" }) {
+export function consoleLogToFile({ logFilePath, formatter = defaultFormatter, includes = [], flags = "a" }) {
   const originalLog = console.log;
   const originalWarn = console.warn;
   const originalError = console.error;
