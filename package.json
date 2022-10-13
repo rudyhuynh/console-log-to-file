@@ -1,7 +1,7 @@
 {
   "name": "console-log-to-file",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
