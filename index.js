@@ -9,7 +9,7 @@ function defaultFormatter(level, args) {
  *
  * @param {*} param0
  */
-export function consoleLogToFile({ logFilePath, formatter = defaultFormatter, includes = [] }) {
+export function consoleLogToFile({ logFilePath, formatter = defaultFormatter, includes = [], flags = "a" }) {
   const originalLog = console.log;
   const originalWarn = console.warn;
   const originalError = console.error;
@@ -19,7 +19,7 @@ export function consoleLogToFile({ logFilePath, formatter = defaultFormatter, in
     throw new Error('"logFilePath" is required');
   }
 
-  const logFileStream = fs.createWriteStream(logFilePath, { flags: "a" });
+  const logFileStream = fs.createWriteStream(logFilePath, { flags });
 
   console.log = function (...args) {
     originalLog.apply(console, args);
